@@ -55,12 +55,21 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-std=c++11" />
-			<Add directory="../../Coding/C++/Libraries/SFML-2.3.2_CB/include" />
+			<Add directory="../../../Coding/C++/Libraries/SFML-2.3.2_CB/include" />
 		</Compiler>
 		<Linker>
-			<Add directory="../../Coding/C++/Libraries/SFML-2.3.2_CB/lib" />
+			<Add directory="../../../Coding/C++/Libraries/SFML-2.3.2_CB/lib" />
 		</Linker>
+		<Unit filename="App.cpp" />
 		<Unit filename="App.hpp" />
+		<Unit filename="StringHelpers.hpp" />
+		<Unit filename="StringHelpers.inl" />
+		<Unit filename="UI/Button.cpp" />
+		<Unit filename="UI/Button.hpp" />
+		<Unit filename="UserInterface.cpp" />
+		<Unit filename="UserInterface.hpp" />
+		<Unit filename="Utility/ColorUtility.cpp" />
+		<Unit filename="Utility/ColorUtility.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
