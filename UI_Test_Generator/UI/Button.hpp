@@ -6,6 +6,7 @@
 #include "SFML/Graphics/RenderTarget.hpp"
 #include "SFML/Graphics/Drawable.hpp"
 #include "SFML/Graphics/Transformable.hpp"
+#include "SFML/Graphics/RenderTexture.hpp"
 
 #include "../StringHelpers.hpp"
 
@@ -42,6 +43,7 @@ namespace UI
 
 
             virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;     //draw function
+            virtual void onClick();         //derived functions will call this when clicked
 
         public:
             Button(const sf::Font& testFont, const std::vector<std::wstring> &parameters);      //A basic constructor
@@ -49,6 +51,21 @@ namespace UI
 
             void updateMouse(sf::Vector2f mousePosition, bool isClicked);                   //this function is called every time
                                                                                             //the mouse is updated and updates the button's state accordingly
+
+    };
+
+
+    class RenderButton : public Button
+    {
+            std::vector<std::wstring> *mSource;             //source for questions
+            std::vector<sf::Texture> *mTarget;              //and a vector of Textures for it to render to
+            sf::Font *mFont;                                //and a font with which to render
+
+            void renderToTarget();                          //gets called by onClick
+
+        public:
+            void setup(std::vector<std::wstring> *source, std::vector<sf::Texture> *target, sf::Font *font);    //setup function
+            void onClick();
 
     };
 }

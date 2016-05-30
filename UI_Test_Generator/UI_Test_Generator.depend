@@ -573,7 +573,7 @@
 	"UserInterface.hpp"
 	<string>
 
-1464550729 source:d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\app.cpp
+1464555615 source:d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\app.cpp
 	"App.hpp"
 	"StringHelpers.hpp"
 
@@ -591,12 +591,13 @@
 	<vector>
 	<fstream>
 
-1464555615 d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\ui\button.hpp
+1464602224 d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\ui\button.hpp
 	"SFML/Graphics/Text.hpp"
 	"SFML/Graphics/RectangleShape.hpp"
 	"SFML/Graphics/RenderTarget.hpp"
 	"SFML/Graphics/Drawable.hpp"
 	"SFML/Graphics/Transformable.hpp"
+	"SFML/Graphics/RenderTexture.hpp"
 	"../StringHelpers.hpp"
 	<functional>
 	<memory>
@@ -608,15 +609,15 @@
 	"../Utility/ColorUtility.hpp"
 	<iostream>
 
-1464550098 source:d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\userinterface.cpp
+1464555615 source:d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\userinterface.cpp
 	"UserInterface.hpp"
 	<iostream>
 
-1464555021 d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\utility\colorutility.hpp
+1464555615 d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\utility\colorutility.hpp
 	<vector>
 	<string>
 
-1464552559 source:d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\utility\colorutility.cpp
+1464555615 source:d:\windows stuff\documents\github\ui-based_test_generator\ui_test_generator\utility\colorutility.cpp
 	<iostream>
 	"ColorUtility.hpp"
 
